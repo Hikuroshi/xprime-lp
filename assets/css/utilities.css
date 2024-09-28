@@ -11,9 +11,9 @@
 }
 
 .card-hover:hover {
-  background-color: #005cbe; /* Biru */
+  background-color: #005cbe;
   color: white;
-  transition: background-color 0.5s ease; /* Animasi transisi */
+  transition: background-color 0.5s ease;
 }
 
 .card-hover:hover .card-title,
@@ -80,4 +80,38 @@
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(190, 214, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  letter-spacing: 0.5em;
+}
+
+.carousel-caption h5 {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.carousel-item img {
+  position: relative;
+  z-index: 0;
 }
